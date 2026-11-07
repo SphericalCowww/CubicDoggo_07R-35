@@ -8,4 +8,4 @@ Cubic Doggo 07R-35 High IMUbility is an upgrade from [Cubic Doggo 07B Wouf](http
 
 ## Acknowledgements
 
-- Libraries and some examples taken from Waveshare: https://www.waveshare.com/wiki/Bus_Servo_Adapter_(A). The license is not defined.
+- Libraries and some examples borrowed from Waveshare: https://www.waveshare.com/wiki/Bus_Servo_Adapter_(A). The license is not specified. For reference only
