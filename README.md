@@ -16,6 +16,21 @@ Cubic Doggo 07R-35 High IMUbility is an upgrade from [Cubic Doggo 07B Wouf](http
 
     ros2 launch my_robot_bringup cubic_doggo.with_lifecycle.launch.py
 
+    cd CubicDoggo_07R-35/
+    chmod +x start_robot.sh
+    vim robot_startup.service
+    # update the user name, paths, and mount name
+    sudo cp robot_startup.service /etc/systemd/system/robot_startup.service
+    sudo chmod 644 /etc/systemd/system/robot_startup.service
+    sudo systemctl enable robot_startup.service                                # now will start at reboot
+    sudo systemctl daemon-reload                                               # reload whenever there is a change
+    # sudo systemctl restart robot_startup.service                             # restart, even if it is running
+    # sudo systemctl stop    robot_startup.service                             # stop right now, kill all relevant nodes
+    # sudo systemctl disable robot_startup.service                             # disable at reboot
+    # journalctl -u robot_startup.service -n 100 > start_robot_output.txt      # to check the output
+    # journalctl -u robot_startup.service -f                                   # to follow the log live
+
+
 ## References:
 
 ## Acknowledgements
