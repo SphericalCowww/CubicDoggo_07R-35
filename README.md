@@ -11,6 +11,10 @@ Cubic Doggo 07R-35 High IMUbility is an upgrade from [Cubic Doggo 07B Wouf](http
     python3 -m venv CubicDoggo_07R-35_env
     source CubicDoggo_07R-35_env/bin/activate
     pip install catkin_pkg empy lark
+    cd CubicDoggo_07R-35/
+    colcon build --parallel-workers 1
+
+    ros2 launch my_robot_bringup cubic_doggo.with_lifecycle.launch.py
 
 ## References:
 
