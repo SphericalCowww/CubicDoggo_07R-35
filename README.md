@@ -6,6 +6,10 @@ Cubic Doggo 07R-35 High IMUbility is an upgrade from [Cubic Doggo 07B Wouf](http
 
 ## Setup
 
+The CAD files in FreeCAD (so completely free to modify) can be found in <a href="https://github.com/SphericalCowww/CubicDoggo_07B/tree/main/src/my_robot_description/mesh/CADv2_ST-3215-C018">GitHub directory</a>/<a href="https://www.printables.com/model/1895571-cubic-doggo-07b-wouf">Printables</a>. Download it and place it in ``CubicDoggo_07R-35/src/my_robot_description/mesh/`` as ``CADv2_ST-3215-C018/``.
+
+Download ``ST/SC serial bus servo control library (Linux)`` from <a href="https://www.waveshare.com/wiki/Bus_Servo_Adapter_(A)">link</a>, expand it under ``CubicDoggo_07R-35/src/my_toolbox_scs_workbench/`` as ``SCServo_Linux/`` and replace ``src/my_toolbox_scs_workbench/SCServo_Linux/SCServo_Linux_220329/SCServo_Linux/CMakeLists.txt``.
+
     cd CubicDoggo_07R-35/
     cd ..
     python3 -m venv CubicDoggo_07R-35_env
