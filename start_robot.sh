@@ -4,6 +4,8 @@ source /home/cubicwouf/Documents/CubicDoggo_07R-35/install/setup.bash
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 export QT_QPA_PLATFORM=xcb
 
+export ROS_DOMAIN_ID=72
+
 exec ros2 launch my_robot_bringup cubic_doggo.with_lifecycle.launch.py
 
 
